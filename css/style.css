@@ -162,7 +162,9 @@ img{
 @media (max-width: 767px){
 	.inner .flex-container{
 		justify-content: flex-start;
+		padding-top: 50px;
 	}
+	
 }
 @media (max-width: 599px){
 	.inner .flex-container{
@@ -260,12 +262,20 @@ img{
 		padding: 25px 50px;
 	}
 }
+@media (max-width: 479px){
+	.posibility .posibility-img{
+		display: none;
+	}
+	.posibility > p{
+		width: 300px;
+		margin: 0 auto 50px auto;
+	}
+}
 /* == POSIBILITY END == */
 
 /* == BEGIN-NOW START == */
 .begin-now{
 	background: url("../img/bg-begin-now.jpg") no-repeat center/cover;
-	height: 100%;
 	text-align: center;
 }
 .begin-now > .title{
@@ -279,9 +289,14 @@ img{
 	margin-left: 30px;
 } 
 @media (max-width: 479px){
-	.begin-now{
-		height: auto;
+	.begin-now > p{
+		margin-bottom: 50px;
 	}
+	.begin-now .btn{
+		display: block;
+		margin: 0 auto 40px;
+		width: 340px;
+	}		
 }
 /* == BEGIN-NOW END == */
 
