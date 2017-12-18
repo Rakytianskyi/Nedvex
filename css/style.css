@@ -129,10 +129,10 @@ img{
 	justify-content: center;
 }
 .inner .flex-container .flex-element + .flex-element{
-	margin-top: 50px;
+	padding-top: 50px;
 }
 .inner .flex-container .flex-element.box2{ 
-	margin-top: 40px;
+	padding-top: 40px;
 	max-width: 375px;
 }
 .inner .flex-container .flex-element.box4 .fa{
@@ -162,7 +162,6 @@ img{
 @media (max-width: 767px){
 	.inner .flex-container{
 		justify-content: flex-start;
-		padding-top: 50px;
 	}
 }
 @media (max-width: 599px){
@@ -173,7 +172,7 @@ img{
 		font-size: 24px;
 	}
 	.inner .flex-container .flex-element + .flex-element{
-		margin-top: 25px;
+		padding-top: 25px;
 	}
 	.inner .flex-container .box2,
 	.inner .flex-container .box3{
@@ -183,6 +182,22 @@ img{
 @media (max-width: 479px){
 	.inner .flex-container{
 		padding: 50px 20px;
+		justify-content: center;
+	}
+	.inner .flex-container .box1{
+		display: flex;
+	}
+	.inner .flex-container .flex-element{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.inner .flex-container .flex-element .btn{
+		display: block;
+		width: 360px;
+		margin: 0 auto;
+	}
+	.inner .flex-container .flex-element.box4 a:first-child{
+		margin: 0 auto 40px auto;
 	}
 }
 /* == INNER END == */
